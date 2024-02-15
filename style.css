@@ -1,0 +1,150 @@
+/* common css start */
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'PT Sans', sans-serif;
+}
+.container{
+    width:1110px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* common css end */
+/* nav css start */
+#header{
+    margin-bottom: 82px;
+}
+#header nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#header nav  ul li a{
+    display: inline-block;
+    color:#353535;
+    padding: 5px 26px;
+    line-height: 2;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+#header nav  ul li a::after{
+    position: absolute;
+    content: "";
+    width:0%;
+    height:1px;
+    background-color: #353535;
+    bottom:0;
+    left: 0;
+    transition: 0.7s;
+}
+#header nav ul li a:hover::after {
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+/* nav css end */
+
+
+/* footer section css start */
+#footer {
+    background: #575757 url("./img/footer_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 152px 0 20px;
+}
+#footer .footer_widget {
+    width: calc(100% / 3);
+}
+#footer .widget-1{
+    padding: 71px 0 182px;
+}
+#footer .widget-2 h2{
+    padding:70px 0 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:#FFF;
+}
+#footer .widget-2 p{
+    font-size: 16px;
+    font-weight: 400;
+    color:#BBB9B9;
+    line-height: 180%;
+}
+#footer .widget-3{
+    text-align: right;
+    margin: 114px 0 139px;
+}
+#footer .widget-3 a {
+    font-weight: 500;
+    font-size: 20px;
+    color:#FFFFFF;
+    background-color: #FFCC00;
+    padding:18px 28px;
+    border-radius: 15px;
+    transition: 0.5s;
+    display: inline-block;
+}
+#footer .widget-4 h6{
+    font-size: 18px;
+    color:#BBB9B9;
+    font-weight: 400;
+    
+}
+#footer .widget-4 a{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    
+}
+#footer .widget-5 h6{
+    font-size: 18px;
+    color:#BBB9B9;
+    font-weight: 400;
+    
+}
+#footer .widget-5 a{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 170%;
+
+}
+#footer .widget-6 .row {
+    justify-content: flex-end;
+    margin-bottom: 116px;
+}
+#footer .widget-6 ul li:nth-child(1){  
+    color:#FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 12px 24px 0 10px;
+    line-height: 180%;
+
+}
+ #footer .widget-6 ul li a{
+   
+    display:inline-block;
+    color:#FFFFFF;
+    width: 46px;
+    height:46px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+ }
